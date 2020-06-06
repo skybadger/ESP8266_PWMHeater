@@ -1,7 +1,7 @@
 "ESP8266_PWMHeater.ino
 Automatic Servoed heater uses PID to manage a set temperature using dewpoint and termperature readings. " 
-This application runs on the ESP8266-01 wifi-enabled SoC device to make local temperature sensor readings and use them to servi control a heating element. The target temperature is provided by a subscription to an environment dewpoint sensor hosted on the nearby MQTT server.  This also provides a restful interface for direct query using curl or http of the servo state and target temperature.
-In my arrangement, Node-red flows are used to listen for and graph the updated readings in the dashboard UI. 
+This application runs on the ESP8266-01 wifi-enabled SoC device to make local temperature sensor readings and use them to servi control a heating element. The target temperature is provided by a subscription to an environment dewpoint sensor hosted on the nearby MQTT server.  This also provides a restful interface for direct query using curl or http of the servo state and target temperature.</br>
+In my arrangement, Node-red flows are used to listen for and graph the updated readings in the dashboard UI. </br>
 The unit is setup for 3 pin io operation ( SDL, SCL, PWM out) and is expecting to see SDA on GPIO0, SCL on GPIO2 and PWMout on GPIO3(Rx). 
 . 
 
